@@ -7,3 +7,4 @@ main.destroy.tfplan
 
 # rust
 target/
+Cargo.lock
