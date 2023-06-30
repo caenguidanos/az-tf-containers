@@ -1,0 +1,9 @@
+# terraform
+.terraform
+.terraform.*
+terraform.*
+main.tfplan
+main.destroy.tfplan
+
+# rust
+target/
