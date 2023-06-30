@@ -18,14 +18,44 @@ variable "http_server_port" {
   description = "Exposed PORT of the HTTP Server"
 }
 
-variable "mariadb_admin_user" {
+variable "mysql_admin_login" {
   default     = "admin_1234"
   sensitive   = true
-  description = "MariaDB Administrator Login"
+  description = "MySQL Administrator Login"
 }
 
-variable "mariadb_admin_password" {
+variable "mysql_admin_password" {
   default     = "ox62212&UTfO!"
   sensitive   = true
-  description = "MariaDB Administrator Password"
+  description = "MySQL Administrator Password"
+}
+
+variable "mysql_database" {
+  default     = "super"
+  description = "MySQL database name"
+}
+
+variable "mysql_sku" {
+  default     = "B_Standard_B1s"
+  description = "MySQL server SKU name"
+}
+
+variable "mysql_storage" {
+  default     = 5 * 1024
+  description = "MySQL storage capacity in MB"
+}
+
+variable "mysql_version" {
+  default     = "8.0"
+  description = "MySQL server version"
+}
+
+variable "static_app_domain" {
+  default     = "beta.caenguidanos.com"
+  description = "Static App custom domain"
+}
+
+variable "storage_container" {
+  default     = "caenguidanos"
+  description = "Storage Account Container name"
 }
